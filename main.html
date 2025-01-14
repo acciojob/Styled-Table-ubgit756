@@ -2,14 +2,108 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Game Statistics Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        thead th {
+            background-color: #2a4365;
+            color: white;
+            text-align: left;
+            padding: 10px;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+
+        tbody td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        tbody tr:hover {
+            background-color: #d3d3d3;
+        }
+
+        .win {
+            font-weight: bold;
+            color: green;
+        }
+
+        .loss {
+            font-weight: bold;
+            color: red;
+        }
+
+        caption {
+            font-size: 1.5em;
+            margin: 10px;
+        }
+    </style>
 </head>
 <body>
-    <!-- add table here -->
-
-        
+    <table>
+        <caption>Game Performance Statistics</caption>
+        <thead>
+            <tr>
+                <th>Player Name</th>
+                <th>Kills</th>
+                <th>Assists</th>
+                <th>Deaths</th>
+                <th>Wins</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Player1</td>
+                <td>15</td>
+                <td>10</td>
+                <td>3</td>
+                <td>1</td>
+                <td class="win">Win</td>
+            </tr>
+            <tr>
+                <td>Player2</td>
+                <td>8</td>
+                <td>5</td>
+                <td>7</td>
+                <td>0</td>
+                <td class="loss">Loss</td>
+            </tr>
+            <tr>
+                <td>Player3</td>
+                <td>20</td>
+                <td>12</td>
+                <td>2</td>
+                <td>1</td>
+                <td class="win">Win</td>
+            </tr>
+            <tr>
+                <td>Player4</td>
+                <td>5</td>
+                <td>3</td>
+                <td>10</td>
+                <td>0</td>
+                <td class="loss">Loss</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
